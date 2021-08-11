@@ -1,0 +1,47 @@
+.box-1:hover,
+.box-2:hover,
+.box-3:hover,
+.box-4:hover {
+    transform: scale(0.9);
+    transition: .3s ease;
+}
+
+.box-1 {
+    background: green;
+    width: 200px;
+    height: 200px;
+    color: green;
+    margin-left: 500px;
+}
+
+.box-2 {
+    background: red;
+    width: 200px;
+    height: 200px;
+    color: red;
+}
+
+.box-3 {
+    background: yellow;
+    width: 200px;
+    height: 200px;
+    color: yellow;
+    margin-left: 500px;
+}
+
+.box-4 {
+    background: blue;
+    width: 200px;
+    height: 200px;
+    color: blue;
+}
+
+button {
+    background-color: rgb(64, 66, 64);
+    color: white;
+    font-size: 25px;
+}
+
+h3 {
+    text-transform: uppercase;
+}

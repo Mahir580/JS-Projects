@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(25, 135, 150);
+}
+
+.calcu-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 90px);
+}
+
+.calcu-grid>button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.75)
+}
+
+.calcu-grid>button:hover {
+    background-color: rgba(211, 211, 211, 0.9);
+}
+
+.calcu-grid>button:active {
+    background-color: rgba(165, 165, 165, 0.9);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(68, 68, 68, 0.842);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+    word-wrap: break-word;
+    word-break: break-all;
+    text-shadow: 0 0 5px rgb(43, 43, 43);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.output .previous-operand {
+    color: rgba(226, 226, 226, 0.774);
+    font-size: 25px;
+}
+
+.output .current-operand {
+    color: white;
+    font-size: 30px;
+}
+
+#dot {
+    border-bottom-left-radius: 10px;
+}
+
+#equ {
+    border-bottom-right-radius: 10px;
+    background-color: rgb(47, 136, 209);
+    color: white;
+}
+
+#operation {
+    background-color: rgb(179, 179, 179);
+}
